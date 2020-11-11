@@ -1,0 +1,21 @@
+<%-include('partial/head.ejs')%>
+<%- include('partial/nav.ejs') %>
+<div class="container">
+    <div class="card text-center">
+        <h1> <%= name %> </h1>
+        <p><%= description %></p>
+        <button class="cartButton">הוסף לסל</button>
+        <hr>
+
+        <% for(let ingrediant of ingrediants) { %>
+        <ul style="list-style: none;">
+            <li class="ing">
+                <%=ingrediant.qty %> <%=ingrediant.name%>
+            </li>
+        </ul>
+        <% } %>
+    </div>
+</div>
+
+
+<%-include('partial/footer.ejs')%>

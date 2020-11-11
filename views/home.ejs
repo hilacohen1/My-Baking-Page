@@ -1,0 +1,114 @@
+<%- include('partial/head.ejs') %>
+<%- include('partial/nav.ejs') %>
+
+<div class="jumbotron text-center ">
+    <h1 class="display-4">אפהילה</h1>
+    <p class="lead">ברוכים הבאים לאפהילה- עמוד האפייה של הילה</p>
+    <hr>
+    <img src="/images/macrons.jpg"
+        class="img-fluid">
+    <hr class="my-4">
+    <button type="button" class="btn btn-dark btn-lg" id="cakes">עוגות </button>
+    <button type="button" class="btn btn-dark btn-lg" id="cookies">עוגיות</button>
+    <button type="button" class="btn btn-dark btn-lg" id="chocolate">שוקולד</button>
+    <button type="button" class="btn btn-dark btn-lg" id="shmarim">שמרים</button>
+</div>
+<div class="card-group row row-cols-2 row-cols-md-4 ">
+    <div class="col mb-4">
+        <div class="card h-100">
+            <button class="border border-white" id="amsCookie"
+                onclick="location.href = 'http://localhost:3000/r/amsterdam';"><img
+                    src="/images/עוגיות-שוקולד-אמסטרדם.jpg"
+                    class="card-img-top" alt="..."></button>
+            <div class="card-body">
+                <h5 class="card-title text-center">עוגיות אמסטרדם</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-4">
+        <div class="card h-100">
+            <button class="border border-white" onclick="location.href='http://localhost:3000/r/pahzaniot';">
+                <img src="/images/פחזניות.jpg"
+                    class="card-img-top"></button>
+            <div class="card-body">
+                <h5 class="card-title text-center">פחזניות</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            <img src="/images/רוגעלך.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">רוגעלך</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            <img src="/images/אלפחורס.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">אלפחורס</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            <img src="/images/קרמבו.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">קרמבו</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            <button class="border border-white" onclick="location.href='http://localhost:3000/r/chocolateCake';"><img
+                    src="/images/עוגת שוקולד.jpg"
+                    class="card-img-top" alt="..."></button>
+            <div class="card-body">
+                <h5 class="card-title text-center">עוגת שוקולד</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            <img src="/images/כדורי שוקולד.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">כדורי שוקולד</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            <img src="/images/פנקייק.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">פנקייק</h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center">
+    <h3 class="card-title">הצטרף לקבלת מתכונים למייל</h3>
+    <form>
+        <input type="text" placeholder="שם" name="username">
+        <input type="email" placeholder="אימייל" name="email"><br>
+        <button>שלחו לי מתכונים</button>
+    </form>
+</div>
+
+
+<%- include('partial/footer.ejs') %>
